@@ -288,3 +288,17 @@
 .hero-art-photo .floating-card,.hero-art-photo .art-tag{z-index:3}
 @media(max-width:900px){.hero-real-photo{height:94%}}
 @media(max-width:650px){.hero-art-photo .hero-real-photo{height:95%}.hero-art-photo .hero-red-disc{width:310px;height:310px;top:32px}.hero-art-photo .card-leads{top:16px}.hero-art-photo .card-workflow{bottom:16px}}
+
+/* Hero card spacing refinement: keep overlays clear of the portrait */
+@media(min-width:1101px){
+  .hero-art-photo .card-leads{left:-48px;top:72px}
+  .hero-art-photo .card-workflow{right:-54px;bottom:42px}
+}
+@media(min-width:651px) and (max-width:1100px){
+  .hero-art-photo .card-leads{left:0;top:56px}
+  .hero-art-photo .card-workflow{right:0;bottom:42px}
+}
+@media(max-width:650px){
+  .hero-art-photo .card-leads{left:0;top:12px}
+  .hero-art-photo .card-workflow{right:0;bottom:8px}
+}
