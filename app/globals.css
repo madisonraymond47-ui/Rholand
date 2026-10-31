@@ -338,3 +338,12 @@
 .case-study-footer a{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:800;color:#c83232}
 @media(max-width:750px){.case-study-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.case-study-flow-step{min-height:170px}.case-study-flow-step:nth-child(2)>svg{display:none}.case-study-summary{grid-template-columns:1fr}.case-study-footer{align-items:flex-start;flex-direction:column}}
 @media(max-width:520px){.project-modal-backdrop{padding:10px}.project-case-study{max-height:94vh;padding:22px 17px}.case-study-summary>div{padding:20px}.case-study-flow{grid-template-columns:1fr}.case-study-flow-step{min-height:0;padding:17px}.case-study-flow-number{margin-bottom:12px}.case-study-flow-step>svg{display:none}.case-study-section-head small{display:none}.case-study-outcome{padding:21px}.case-study-intro{font-size:14px}}
+
+
+/* About section: real portrait + authentic demo workspace */
+.about-photo-main{background:#e9e9e9}
+.about-portrait-image{display:block;width:100%;height:100%;object-fit:cover;object-position:center 23%;filter:saturate(.94)}
+.about-photo-secondary{background:#fff;display:flex;align-items:center;justify-content:center}
+.about-workflow-image{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
+.about-workflow-tag{position:absolute;left:12px;bottom:12px;background:#171717;color:#fff;border-radius:5px;padding:9px 11px;font-size:9px;font-weight:800;letter-spacing:1px;box-shadow:0 5px 15px #0002}
+@media(max-width:650px){.about-portrait-image{object-position:center 20%}.about-workflow-tag{left:7px;bottom:7px;font-size:8px;padding:7px 8px}}
