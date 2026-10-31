@@ -347,3 +347,29 @@
 .about-workflow-image{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
 .about-workflow-tag{position:absolute;left:12px;bottom:12px;background:#171717;color:#fff;border-radius:5px;padding:9px 11px;font-size:9px;font-weight:800;letter-spacing:1px;box-shadow:0 5px 15px #0002}
 @media(max-width:650px){.about-portrait-image{object-position:center 20%}.about-workflow-tag{left:7px;bottom:7px;font-size:8px;padding:7px 8px}}
+
+
+/* Mobile usability refinements */
+@media(max-width:750px){
+  html,body{max-width:100%;overflow-x:clip}
+  .container,.about-story-grid,.featured-project,.project-contact-layout,.project-form-shell{min-width:0}
+  img,video{max-width:100%}
+  .featured-project-info,.featured-project-media,.featured-project-window{min-width:0}
+  .featured-project-window img{max-width:100%;height:auto}
+  .project-case-study .project-modal-head h3{overflow-wrap:anywhere}
+  .case-study-flow-step p{overflow-wrap:break-word}
+  .case-study-footer a{min-height:44px;align-items:center}
+  .project-view,.project-form-submit,.menu-toggle{min-height:44px}
+}
+@media(max-width:520px){
+  .about-story-visuals{width:100%;max-width:100%;min-width:0}
+  .about-photo-main{width:78%}
+  .about-photo-secondary{width:54%}
+  .about-story-copy h3,.about-story-heading h2{overflow-wrap:break-word}
+  .project-case-study{width:100%;max-width:100%;overflow-x:hidden}
+  .project-case-study .project-modal-images{grid-template-columns:1fr}
+  .case-study-section-head h4{overflow-wrap:break-word}
+  .case-study-tools>div span{max-width:100%;overflow-wrap:anywhere}
+  .project-form input,.project-form select,.project-form textarea{font-size:16px}
+  .project-contact-availability{white-space:normal}
+}
