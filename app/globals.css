@@ -13,3 +13,28 @@
 @media(max-width:1100px){.hero h1{font-size:clamp(51px,6vw,76px)}.hero h1 span{letter-spacing:-3px}.hero-art .card-leads{left:0}.hero-art .card-workflow{right:0}}
 @media(max-width:950px){.hero{grid-template-columns:1fr;gap:20px}.hero h1{font-size:clamp(58px,9vw,95px)}.hero-art{height:520px}.hero-red-disc{top:35px}.hero-portrait{bottom:0}.hero-art .card-leads{left:8%}.hero-art .card-workflow{right:8%}}
 @media(max-width:650px){.hero{padding-top:48px;padding-bottom:30px}.hero .hello{font-size:35px;margin-top:30px}.hero h1{font-size:clamp(39px,10vw,65px);letter-spacing:-2.7px}.hero h1 span{letter-spacing:-2px}.hero .intro{font-size:15px;margin:26px 0}.hero .hero-foot{margin-top:38px}.hero-art{height:370px;overflow:hidden}.hero-red-disc{width:290px;height:290px;top:36px}.hero-portrait{transform:translateX(-50%) scale(.72);transform-origin:bottom center}.hero-art .floating-card{padding:11px}.hero-art .card-leads{left:0;top:26px}.hero-art .card-workflow{right:0;bottom:35px}.portrait-note{bottom:3px}}
+
+/* Services section v2 — scoped to services only */
+.services-section{padding-top:135px;padding-bottom:120px}
+.services-heading{margin-bottom:56px;align-items:end}
+.services-heading h2{font-size:clamp(44px,5.2vw,76px);letter-spacing:-3.8px;line-height:1.05}
+.services-heading-side{max-width:350px;padding-bottom:6px}
+.services-heading-side p{font-size:16px;line-height:1.75;color:#696969;margin:0 0 20px}
+.services-discover{display:inline-flex;align-items:center;gap:12px;font-weight:800;font-size:13px;border-bottom:1px solid #191919;padding-bottom:8px}
+.services-section .service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.services-section .service-card{min-height:330px;display:flex;flex-direction:column;position:relative;padding:29px;border:1px solid #e8e8e8;border-radius:19px;background:#fff;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s}
+.services-section .service-card:hover{background:#fffafa;border-color:#f0c8c8;transform:translateY(-5px);box-shadow:0 18px 35px #1c1c1c0a}
+.services-section .service-top{display:flex;align-items:flex-start;justify-content:space-between}
+.services-section .service-icon{width:56px;height:56px;display:grid;place-items:center;background:#fff0f0;color:#d52626;border-radius:15px}
+.services-section .service-index{font-size:11px;font-weight:800;letter-spacing:1px;color:#b1b1b1}
+.services-section .service-content{margin-top:47px}
+.services-section .service-tag{font-size:10px;letter-spacing:1.7px;font-weight:800;color:#d52626}
+.services-section .service-card h3{font-family:Outfit,sans-serif;font-size:clamp(21px,2vw,26px);line-height:1.16;letter-spacing:-.65px;margin:13px 0}
+.services-section .service-card p{font-size:14px;line-height:1.75;color:#6c6c6c;max-width:310px;margin:0}
+.services-section .service-arrow{position:absolute;right:27px;bottom:23px;color:#b0b0b0}
+.services-bottom{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-top:32px}
+.services-bottom>span{font-size:10px;font-weight:800;letter-spacing:1.7px;display:flex;align-items:center;gap:10px}
+.services-bottom-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#d52626}
+.services-bottom p{font-size:13px;color:#8b8b8b;margin:0}
+@media(max-width:950px){.services-section .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.services-heading{align-items:start}.services-heading h2{letter-spacing:-2.5px}}
+@media(max-width:650px){.services-section{padding-top:80px;padding-bottom:75px}.services-heading{margin-bottom:32px}.services-heading h2{font-size:clamp(40px,9vw,55px);letter-spacing:-2px}.services-heading-side{margin-top:24px}.services-section .service-grid{grid-template-columns:1fr;gap:12px}.services-section .service-card{min-height:275px;padding:25px}.services-section .service-content{margin-top:30px}.services-bottom{align-items:flex-start;flex-direction:column}.services-bottom p{line-height:1.5}}
