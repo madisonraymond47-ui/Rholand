@@ -15,7 +15,9 @@ const projects=[
 {number:"03",name:"Appointment Booking Automation",type:"BOOKING / REMINDERS",detail:"A booking workflow for confirmation emails, SMS reminders, and appointment follow-ups.",steps:["Appointment booked","Instant confirmation","Scheduled reminders"],image:"/projects/appointment-booking-1.png",secondary:"/projects/appointment-booking-2.png"}
 ];
 export default function Home(){
-const [menuOpen,setMenuOpen]=useState(false);\nconst [activeProject,setActiveProject]=useState<number|null>(null);\nconst [imageFallback,setImageFallback]=useState<Record<string,boolean>>({});
+const [menuOpen,setMenuOpen]=useState(false);
+const [activeProject,setActiveProject]=useState<number|null>(null);
+const [imageFallback,setImageFallback]=useState<Record<string,boolean>>({});
 const links=[["Home","#home"],["Services","#services"],["Projects","#projects"],["About","#about"]] as const;
 return <main>
 <header className="site-header"><nav className="nav-shell" aria-label="Main navigation"><a className="brand" href="#home" aria-label="Roland home">R<span>.</span></a><div className="nav-links">{links.map(([label,href])=><a key={label} href={href}>{label}</a>)}</div><a className="nav-cta" href="#contact">Let's Talk <ArrowUpRight size={16}/></a><button className="menu-toggle" onClick={()=>setMenuOpen(!menuOpen)} aria-label={menuOpen?"Close menu":"Open menu"} aria-expanded={menuOpen}>{menuOpen?<X/>:<Menu/>}</button></nav>{menuOpen&&<div className="mobile-menu">{links.map(([label,href])=><a key={label} href={href} onClick={()=>setMenuOpen(false)}>{label}</a>)}<a href="#contact" onClick={()=>setMenuOpen(false)}>Let's Talk ↗</a></div>}</header>
